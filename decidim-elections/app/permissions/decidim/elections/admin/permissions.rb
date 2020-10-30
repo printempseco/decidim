@@ -14,6 +14,8 @@ module Decidim
               allow_if_not_started
             when :import_proposals
               allow_if_not_started
+            when :select
+              allow_if_finished
             end
           when :election
             case permission_action.action
@@ -64,6 +66,10 @@ module Decidim
 
         def allow_if_not_started
           toggle_allow(election && !election.started?)
+        end
+
+        def allow_if_finished
+          toggle_allow(election && election.finished?)
         end
 
         def allow_if_valid_and_not_started
