@@ -119,6 +119,7 @@ en:
             invalid: There was a problem updating this election
             success: Election successfully updated
         exports:
+          elections: Elections
           feedback_form_answers: Feedback form answers
         models:
           answer:
