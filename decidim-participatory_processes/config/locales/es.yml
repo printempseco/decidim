@@ -477,7 +477,6 @@ es:
           take_part: Participa
       participatory_processes:
         index:
-          promoted_process_groups: Grupos de procesos destacados
           promoted_processes: Procesos destacados
         participatory_process:
           active_step: 'Fase actual:'
